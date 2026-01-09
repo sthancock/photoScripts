@@ -5,7 +5,7 @@ set outDir="/Users/dougal/safe/photos"
 set list=`ls *.CR2`
 foreach file( $list )
   set bits=`strings $file|grep 2026`
-  set dAte=`echo $bits[1]|sed -e s%\:%.%g -e s%2026%26%`
+  set dAte=`echo $bits[1]|sed -e s%\:%.%g -e s%202%2%`
 
   set dir="$outDir/$dAte"
   if( ! -e $dir )mkdir $dir/
