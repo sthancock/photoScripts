@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-set outDir="/Users/dougal/safe/photos"
+set outDir="$HOME/safe/photos"
 
 set list=`ls *.CR2`
 foreach file( $list )
